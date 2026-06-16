@@ -1,0 +1,680 @@
+2026-02-11 10:30:41 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Starting EmployeeAppraisalSystemApplication using Java 21.0.5 with PID 31064 (C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem\target\classes started by sirisha.thumuluri in C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem)
+2026-02-11 10:30:41 - DEBUG - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-11 10:30:41 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 10:30:42 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 10:30:42 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 150 ms. Found 25 JPA repository interfaces.
+2026-02-11 10:30:42 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 2025 (http)
+2026-02-11 10:30:42 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 10:30:42 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-11 10:30:42 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 10:30:42 - INFO - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 636 ms
+2026-02-11 10:30:42 - INFO - com.companyname.employeeappraisal.SimpleCORSFilter - SimpleCORSFilter init
+2026-02-11 10:30:42 - DEBUG - com.companyname.employeeappraisal.util.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-02-11 10:30:42 - INFO - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 10:30:42 - INFO - org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 10:30:42 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 10:30:42 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
+2026-02-11 10:30:42 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48889e42
+2026-02-11 10:30:42 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
+2026-02-11 10:30:42 - WARN - org.hibernate.dialect.Dialect - HHH000511: The 5.5.43 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-11 10:30:42 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 10:30:42 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-11)']
+	Database driver: undefined/unknown
+	Database version: 5.5.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 10:30:42 - INFO - org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 10:30:42 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:30:42 - WARN - org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 10:30:42 - INFO - org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-11 10:30:42 - INFO - org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-11 10:30:43 - INFO - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-11 10:30:43 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 2025 (http) with context path '/'
+2026-02-11 10:30:43 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Started EmployeeAppraisalSystemApplication in 1.391 seconds (process running for 3647.566)
+2026-02-11 10:30:43 - INFO - org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.file.name logs/app.log (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2026-02-11 10:31:09 - INFO - org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-02-11 10:31:09 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-11 10:31:09 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-11 10:31:09 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:31:09 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
+2026-02-11 10:31:09 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
+2026-02-11 10:31:16 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Starting EmployeeAppraisalSystemApplication using Java 21.0.5 with PID 31728 (C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem\target\classes started by sirisha.thumuluri in C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem)
+2026-02-11 10:31:16 - DEBUG - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-11 10:31:16 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 10:31:16 - INFO - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-11 10:31:16 - INFO - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-11 10:31:17 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 10:31:17 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 226 ms. Found 25 JPA repository interfaces.
+2026-02-11 10:31:18 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 2025 (http)
+2026-02-11 10:31:18 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 10:31:18 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-11 10:31:18 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 10:31:18 - INFO - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2071 ms
+2026-02-11 10:31:18 - INFO - com.companyname.employeeappraisal.SimpleCORSFilter - SimpleCORSFilter init
+2026-02-11 10:31:18 - DEBUG - com.companyname.employeeappraisal.util.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-02-11 10:31:18 - INFO - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 10:31:18 - INFO - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-02-11 10:31:18 - INFO - org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 10:31:19 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 10:31:19 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-11 10:31:19 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15531e22
+2026-02-11 10:31:19 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-11 10:31:19 - WARN - org.hibernate.dialect.Dialect - HHH000511: The 5.5.43 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-11 10:31:19 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 10:31:19 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 10:31:20 - INFO - org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 10:31:20 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:31:20 - INFO - org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-11 10:31:21 - WARN - org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 10:31:22 - INFO - org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-11 10:31:22 - INFO - org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-11 10:31:22 - INFO - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-11 10:31:22 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 2025 (http) with context path '/'
+2026-02-11 10:31:22 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Started EmployeeAppraisalSystemApplication in 6.51 seconds (process running for 8.233)
+2026-02-11 10:31:22 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-11 10:31:22 - INFO - org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-11 10:31:22 - INFO - org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-02-11 10:41:19 - INFO - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-11 10:41:19 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-11 10:41:19 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-11 10:41:19 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:41:19 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-11 10:41:19 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-11 10:41:20 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Starting EmployeeAppraisalSystemApplication using Java 21.0.5 with PID 31728 (C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem\target\classes started by sirisha.thumuluri in C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem)
+2026-02-11 10:41:20 - DEBUG - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-11 10:41:20 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 10:41:20 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 10:41:20 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 136 ms. Found 25 JPA repository interfaces.
+2026-02-11 10:41:20 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 2025 (http)
+2026-02-11 10:41:20 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 10:41:20 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-11 10:41:20 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 10:41:20 - INFO - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 719 ms
+2026-02-11 10:41:20 - INFO - com.companyname.employeeappraisal.SimpleCORSFilter - SimpleCORSFilter init
+2026-02-11 10:41:20 - DEBUG - com.companyname.employeeappraisal.util.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-02-11 10:41:20 - INFO - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 10:41:20 - INFO - org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 10:41:20 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 10:41:20 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-02-11 10:41:20 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ce3f4d9
+2026-02-11 10:41:20 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-02-11 10:41:20 - WARN - org.hibernate.dialect.Dialect - HHH000511: The 5.5.43 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-11 10:41:20 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 10:41:20 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 5.5.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 10:41:21 - INFO - org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 10:41:21 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:41:21 - WARN - org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 10:41:21 - INFO - org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-11 10:41:21 - INFO - org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-11 10:41:21 - INFO - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-11 10:41:21 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 2025 (http) with context path '/'
+2026-02-11 10:41:21 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Started EmployeeAppraisalSystemApplication in 1.648 seconds (process running for 607.392)
+2026-02-11 10:41:21 - INFO - org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-02-11 10:44:06 - INFO - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-11 10:44:06 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-11 10:44:06 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-11 10:44:06 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:44:06 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-02-11 10:44:06 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-02-11 10:44:06 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Starting EmployeeAppraisalSystemApplication using Java 21.0.5 with PID 31728 (C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem\target\classes started by sirisha.thumuluri in C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem)
+2026-02-11 10:44:06 - DEBUG - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-11 10:44:06 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 10:44:06 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 10:44:07 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 171 ms. Found 25 JPA repository interfaces.
+2026-02-11 10:44:07 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 2025 (http)
+2026-02-11 10:44:07 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 10:44:07 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-11 10:44:07 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 10:44:07 - INFO - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 671 ms
+2026-02-11 10:44:07 - INFO - com.companyname.employeeappraisal.SimpleCORSFilter - SimpleCORSFilter init
+2026-02-11 10:44:07 - DEBUG - com.companyname.employeeappraisal.util.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-02-11 10:44:07 - INFO - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 10:44:07 - INFO - org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 10:44:07 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 10:44:07 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-02-11 10:44:07 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@164e35a8
+2026-02-11 10:44:07 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-02-11 10:44:07 - WARN - org.hibernate.dialect.Dialect - HHH000511: The 5.5.43 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-11 10:44:07 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 10:44:07 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 5.5.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 10:44:07 - INFO - org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 10:44:07 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:44:07 - WARN - org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 10:44:07 - INFO - org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-11 10:44:07 - INFO - org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-11 10:44:08 - INFO - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-11 10:44:08 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 2025 (http) with context path '/'
+2026-02-11 10:44:08 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Started EmployeeAppraisalSystemApplication in 1.463 seconds (process running for 773.769)
+2026-02-11 10:44:08 - INFO - org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-02-11 10:44:54 - INFO - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-11 10:44:54 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-11 10:44:54 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-11 10:44:54 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:44:54 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-02-11 10:44:54 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-02-11 10:44:55 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Starting EmployeeAppraisalSystemApplication using Java 21.0.5 with PID 31728 (C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem\target\classes started by sirisha.thumuluri in C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem)
+2026-02-11 10:44:55 - DEBUG - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-11 10:44:55 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 10:44:55 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 10:44:55 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 180 ms. Found 25 JPA repository interfaces.
+2026-02-11 10:44:55 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 2025 (http)
+2026-02-11 10:44:55 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 10:44:55 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-11 10:44:55 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 10:44:55 - INFO - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 691 ms
+2026-02-11 10:44:55 - INFO - com.companyname.employeeappraisal.SimpleCORSFilter - SimpleCORSFilter init
+2026-02-11 10:44:55 - DEBUG - com.companyname.employeeappraisal.util.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-02-11 10:44:55 - INFO - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 10:44:55 - INFO - org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 10:44:55 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 10:44:55 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2026-02-11 10:44:55 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51e0a6d0
+2026-02-11 10:44:55 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2026-02-11 10:44:55 - WARN - org.hibernate.dialect.Dialect - HHH000511: The 5.5.43 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-11 10:44:55 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 10:44:55 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 5.5.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 10:44:56 - INFO - org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 10:44:56 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:44:56 - WARN - org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 10:44:56 - INFO - org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-11 10:44:56 - INFO - org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-11 10:44:56 - INFO - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-11 10:44:56 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 2025 (http) with context path '/'
+2026-02-11 10:44:56 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Started EmployeeAppraisalSystemApplication in 1.624 seconds (process running for 822.358)
+2026-02-11 10:44:56 - INFO - org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-02-11 10:45:09 - INFO - org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-02-11 10:45:09 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-11 10:45:09 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-11 10:45:09 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:45:09 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2026-02-11 10:45:09 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2026-02-11 10:46:38 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Starting EmployeeAppraisalSystemApplication using Java 21.0.5 with PID 32644 (C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem\target\classes started by sirisha.thumuluri in C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem)
+2026-02-11 10:46:38 - DEBUG - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-11 10:46:38 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 10:46:38 - INFO - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-11 10:46:38 - INFO - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-11 10:46:39 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 10:46:39 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 184 ms. Found 25 JPA repository interfaces.
+2026-02-11 10:46:39 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 2025 (http)
+2026-02-11 10:46:39 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 10:46:39 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-11 10:46:39 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 10:46:39 - INFO - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1644 ms
+2026-02-11 10:46:39 - INFO - com.companyname.employeeappraisal.SimpleCORSFilter - SimpleCORSFilter init
+2026-02-11 10:46:40 - DEBUG - com.companyname.employeeappraisal.util.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-02-11 10:46:40 - INFO - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 10:46:40 - INFO - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-02-11 10:46:40 - INFO - org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 10:46:40 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 10:46:40 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-11 10:46:40 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f8071a1
+2026-02-11 10:46:40 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-11 10:46:40 - WARN - org.hibernate.dialect.Dialect - HHH000511: The 5.5.43 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-11 10:46:40 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 10:46:40 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 10:46:41 - INFO - org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 10:46:41 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:46:41 - INFO - org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-11 10:46:42 - WARN - org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 10:46:42 - INFO - org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-11 10:46:42 - INFO - org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-11 10:46:43 - INFO - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-11 10:46:43 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 2025 (http) with context path '/'
+2026-02-11 10:46:43 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Started EmployeeAppraisalSystemApplication in 5.417 seconds (process running for 6.196)
+2026-02-11 10:46:43 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-11 10:46:43 - INFO - org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-11 10:46:43 - INFO - org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-11 10:46:46 - INFO - com.companyname.employeeappraisal.service.MasterService - Login request received for employeeCode: 12699
+2026-02-11 10:46:46 - DEBUG - com.companyname.employeeappraisal.service.MasterService - Employee ID fetched: 12699
+2026-02-11 10:46:46 - INFO - com.companyname.employeeappraisal.service.MasterService - Fetching roles for employeeId: 12699
+2026-02-11 10:46:46 - INFO - com.companyname.employeeappraisal.service.MasterService - No roles found. Assigning default EMP role.
+2026-02-11 10:46:46 - INFO - com.companyname.employeeappraisal.service.MasterService - Fetching allowed modules for roles: [1]
+2026-02-11 10:46:46 - DEBUG - com.companyname.employeeappraisal.service.MasterService - Allowed module count: 5
+2026-02-11 10:46:46 - INFO - com.companyname.employeeappraisal.service.MasterService - Checking active financial year and quarter
+2026-02-11 10:46:46 - INFO - com.companyname.employeeappraisal.service.MasterService - Preparing response for employeeId: 12699
+2026-02-11 10:46:46 - INFO - com.companyname.employeeappraisal.service.MasterService - Role assigned: EMP
+2026-02-11 10:46:46 - INFO - com.companyname.employeeappraisal.service.MasterService - JWT token generated successfully for employeeId: 12699
+2026-02-11 10:46:46 - INFO - com.companyname.employeeappraisal.service.MasterService - Login successful for employeeId: 12699
+2026-02-11 10:47:04 - INFO - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-11 10:47:04 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-11 10:47:04 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-11 10:47:04 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:47:04 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-11 10:47:04 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-11 10:47:04 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Starting EmployeeAppraisalSystemApplication using Java 21.0.5 with PID 32644 (C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem\target\classes started by sirisha.thumuluri in C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem)
+2026-02-11 10:47:04 - DEBUG - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-11 10:47:04 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 10:47:04 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 10:47:05 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 205 ms. Found 25 JPA repository interfaces.
+2026-02-11 10:47:05 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 2025 (http)
+2026-02-11 10:47:05 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 10:47:05 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-11 10:47:05 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 10:47:05 - INFO - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 804 ms
+2026-02-11 10:47:05 - INFO - com.companyname.employeeappraisal.SimpleCORSFilter - SimpleCORSFilter init
+2026-02-11 10:47:05 - DEBUG - com.companyname.employeeappraisal.util.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-02-11 10:47:05 - INFO - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 10:47:05 - INFO - org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 10:47:05 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 10:47:05 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-02-11 10:47:05 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6bef6a3a
+2026-02-11 10:47:05 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-02-11 10:47:05 - WARN - org.hibernate.dialect.Dialect - HHH000511: The 5.5.43 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-11 10:47:05 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 10:47:05 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 5.5.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 10:47:05 - INFO - org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 10:47:05 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:47:05 - WARN - org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 10:47:05 - INFO - org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-11 10:47:06 - INFO - org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-11 10:47:06 - INFO - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-11 10:47:06 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 2025 (http) with context path '/'
+2026-02-11 10:47:06 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Started EmployeeAppraisalSystemApplication in 1.759 seconds (process running for 29.077)
+2026-02-11 10:47:06 - INFO - org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-02-11 10:47:13 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-11 10:47:13 - INFO - org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-11 10:47:13 - INFO - org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-02-11 10:47:13 - INFO - com.companyname.employeeappraisal.service.MasterService - Login request received for employeeCode: 12699
+2026-02-11 10:47:13 - DEBUG - com.companyname.employeeappraisal.service.MasterService - Employee ID fetched: 12699
+2026-02-11 10:47:13 - INFO - com.companyname.employeeappraisal.service.MasterService - Fetching roles for employeeId: 12699
+2026-02-11 10:47:13 - INFO - com.companyname.employeeappraisal.service.MasterService - No roles found. Assigning default EMP role.
+2026-02-11 10:47:13 - INFO - com.companyname.employeeappraisal.service.MasterService - Fetching allowed modules for roles: [1]
+2026-02-11 10:47:13 - INFO - com.companyname.employeeappraisal.service.MasterService - Checking active financial year and quarter
+2026-02-11 10:47:13 - INFO - com.companyname.employeeappraisal.service.MasterService - Preparing response for employeeId: 12699
+2026-02-11 10:47:13 - INFO - com.companyname.employeeappraisal.service.MasterService - Role assigned: EMP
+2026-02-11 10:47:13 - INFO - com.companyname.employeeappraisal.service.MasterService - JWT token generated successfully for employeeId: 12699
+2026-02-11 10:47:13 - INFO - com.companyname.employeeappraisal.service.MasterService - Login successful for employeeId: 12699
+2026-02-11 10:49:16 - INFO - org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-02-11 10:49:16 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-11 10:49:16 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-11 10:49:16 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:49:16 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-02-11 10:49:16 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-02-11 10:49:21 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Starting EmployeeAppraisalSystemApplication using Java 21.0.5 with PID 35400 (C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem\target\classes started by sirisha.thumuluri in C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem)
+2026-02-11 10:49:21 - DEBUG - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-11 10:49:21 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 10:49:21 - INFO - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-11 10:49:21 - INFO - org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-11 10:49:22 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 10:49:22 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 202 ms. Found 25 JPA repository interfaces.
+2026-02-11 10:49:22 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 2025 (http)
+2026-02-11 10:49:22 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 10:49:22 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-11 10:49:22 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 10:49:22 - INFO - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1854 ms
+2026-02-11 10:49:23 - INFO - com.companyname.employeeappraisal.SimpleCORSFilter - SimpleCORSFilter init
+2026-02-11 10:49:23 - DEBUG - com.companyname.employeeappraisal.util.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-02-11 10:49:23 - INFO - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 10:49:23 - INFO - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-02-11 10:49:23 - INFO - org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 10:49:23 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 10:49:23 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-11 10:49:23 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49f7341
+2026-02-11 10:49:23 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-11 10:49:23 - WARN - org.hibernate.dialect.Dialect - HHH000511: The 5.5.43 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-11 10:49:23 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 10:49:23 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 10:49:24 - INFO - org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 10:49:24 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:49:24 - INFO - org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-11 10:49:25 - WARN - org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 10:49:25 - INFO - org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-11 10:49:26 - INFO - org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-11 10:49:26 - INFO - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-11 10:49:26 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 2025 (http) with context path '/'
+2026-02-11 10:49:26 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Started EmployeeAppraisalSystemApplication in 5.678 seconds (process running for 6.483)
+2026-02-11 10:49:26 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-11 10:49:26 - INFO - org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-11 10:49:26 - INFO - org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-02-11 10:52:56 - INFO - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-02-11 10:52:56 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-11 10:52:56 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-11 10:52:56 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:52:56 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-11 10:52:56 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-11 10:52:56 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Starting EmployeeAppraisalSystemApplication using Java 21.0.5 with PID 35400 (C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem\target\classes started by sirisha.thumuluri in C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem)
+2026-02-11 10:52:56 - DEBUG - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-11 10:52:56 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 10:52:57 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 10:52:57 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 149 ms. Found 25 JPA repository interfaces.
+2026-02-11 10:52:57 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 2025 (http)
+2026-02-11 10:52:57 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 10:52:57 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-11 10:52:57 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 10:52:57 - INFO - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 829 ms
+2026-02-11 10:52:57 - INFO - com.companyname.employeeappraisal.SimpleCORSFilter - SimpleCORSFilter init
+2026-02-11 10:52:57 - DEBUG - com.companyname.employeeappraisal.util.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-02-11 10:52:57 - INFO - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 10:52:57 - INFO - org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 10:52:57 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 10:52:57 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-02-11 10:52:57 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7afec8d
+2026-02-11 10:52:57 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-02-11 10:52:57 - WARN - org.hibernate.dialect.Dialect - HHH000511: The 5.5.43 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-11 10:52:57 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 10:52:57 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 5.5.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 10:52:58 - INFO - org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 10:52:58 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:52:58 - WARN - org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 10:52:58 - INFO - org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-11 10:52:58 - INFO - org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-11 10:52:58 - INFO - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-11 10:52:58 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 2025 (http) with context path '/'
+2026-02-11 10:52:58 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Started EmployeeAppraisalSystemApplication in 1.906 seconds (process running for 218.823)
+2026-02-11 10:52:58 - INFO - org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-02-11 10:53:05 - INFO - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-02-11 10:53:05 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-11 10:53:05 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-11 10:53:05 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:53:05 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-02-11 10:53:05 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-02-11 10:53:05 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Starting EmployeeAppraisalSystemApplication using Java 21.0.5 with PID 35400 (C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem\target\classes started by sirisha.thumuluri in C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem)
+2026-02-11 10:53:05 - DEBUG - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-11 10:53:05 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 10:53:05 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 10:53:06 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 216 ms. Found 25 JPA repository interfaces.
+2026-02-11 10:53:06 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 2025 (http)
+2026-02-11 10:53:06 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 10:53:06 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-11 10:53:06 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 10:53:06 - INFO - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 725 ms
+2026-02-11 10:53:06 - INFO - com.companyname.employeeappraisal.SimpleCORSFilter - SimpleCORSFilter init
+2026-02-11 10:53:06 - DEBUG - com.companyname.employeeappraisal.util.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-02-11 10:53:06 - INFO - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 10:53:06 - INFO - org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 10:53:06 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 10:53:06 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-02-11 10:53:06 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@aba5574
+2026-02-11 10:53:06 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-02-11 10:53:06 - WARN - org.hibernate.dialect.Dialect - HHH000511: The 5.5.43 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-11 10:53:06 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 10:53:06 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 5.5.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 10:53:06 - INFO - org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 10:53:06 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:53:06 - WARN - org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 10:53:06 - INFO - org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-11 10:53:06 - INFO - org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-11 10:53:06 - INFO - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-11 10:53:06 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 2025 (http) with context path '/'
+2026-02-11 10:53:06 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Started EmployeeAppraisalSystemApplication in 1.576 seconds (process running for 227.005)
+2026-02-11 10:53:06 - INFO - org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-02-11 10:55:20 - INFO - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-02-11 10:55:20 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-11 10:55:20 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-11 10:55:20 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:55:20 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-02-11 10:55:20 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-02-11 10:55:20 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Starting EmployeeAppraisalSystemApplication using Java 21.0.5 with PID 35400 (C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem\target\classes started by sirisha.thumuluri in C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem)
+2026-02-11 10:55:20 - DEBUG - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-11 10:55:20 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 10:55:21 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 10:55:21 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 183 ms. Found 25 JPA repository interfaces.
+2026-02-11 10:55:21 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 2025 (http)
+2026-02-11 10:55:21 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 10:55:21 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-11 10:55:21 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 10:55:21 - INFO - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 639 ms
+2026-02-11 10:55:21 - INFO - com.companyname.employeeappraisal.SimpleCORSFilter - SimpleCORSFilter init
+2026-02-11 10:55:21 - DEBUG - com.companyname.employeeappraisal.util.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-02-11 10:55:21 - INFO - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 10:55:21 - INFO - org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 10:55:21 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 10:55:21 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2026-02-11 10:55:21 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32c020c2
+2026-02-11 10:55:21 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2026-02-11 10:55:21 - WARN - org.hibernate.dialect.Dialect - HHH000511: The 5.5.43 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-11 10:55:21 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 10:55:21 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 5.5.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 10:55:21 - INFO - org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 10:55:21 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:55:22 - WARN - org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 10:55:22 - INFO - org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-11 10:55:22 - INFO - org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-11 10:55:22 - INFO - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-11 10:55:22 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 2025 (http) with context path '/'
+2026-02-11 10:55:22 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Started EmployeeAppraisalSystemApplication in 1.417 seconds (process running for 362.271)
+2026-02-11 10:55:22 - INFO - org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-02-11 10:56:47 - INFO - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-02-11 10:56:47 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-11 10:56:47 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-11 10:56:47 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:56:47 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2026-02-11 10:56:47 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2026-02-11 10:56:47 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Starting EmployeeAppraisalSystemApplication using Java 21.0.5 with PID 35400 (C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem\target\classes started by sirisha.thumuluri in C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem)
+2026-02-11 10:56:47 - DEBUG - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-11 10:56:47 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 10:56:48 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 10:56:48 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 118 ms. Found 25 JPA repository interfaces.
+2026-02-11 10:56:48 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 2025 (http)
+2026-02-11 10:56:48 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 10:56:48 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-11 10:56:48 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 10:56:48 - INFO - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 593 ms
+2026-02-11 10:56:48 - INFO - com.companyname.employeeappraisal.SimpleCORSFilter - SimpleCORSFilter init
+2026-02-11 10:56:48 - DEBUG - com.companyname.employeeappraisal.util.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-02-11 10:56:48 - INFO - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 10:56:48 - INFO - org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 10:56:48 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 10:56:48 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2026-02-11 10:56:48 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4bb48fcd
+2026-02-11 10:56:48 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2026-02-11 10:56:48 - WARN - org.hibernate.dialect.Dialect - HHH000511: The 5.5.43 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-11 10:56:48 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 10:56:48 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 5.5.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 10:56:48 - INFO - org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 10:56:48 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:56:48 - WARN - org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 10:56:48 - INFO - org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-11 10:56:48 - INFO - org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-11 10:56:49 - INFO - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-11 10:56:49 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 2025 (http) with context path '/'
+2026-02-11 10:56:49 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Started EmployeeAppraisalSystemApplication in 1.316 seconds (process running for 449.112)
+2026-02-11 10:56:49 - INFO - org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-02-11 10:57:04 - INFO - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-11 10:57:04 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-11 10:57:04 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-11 10:57:04 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:57:04 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2026-02-11 10:57:04 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2026-02-11 10:57:05 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Starting EmployeeAppraisalSystemApplication using Java 21.0.5 with PID 35400 (C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem\target\classes started by sirisha.thumuluri in C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem)
+2026-02-11 10:57:05 - DEBUG - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-11 10:57:05 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 10:57:05 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 10:57:05 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 200 ms. Found 25 JPA repository interfaces.
+2026-02-11 10:57:05 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 2025 (http)
+2026-02-11 10:57:05 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 10:57:05 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-11 10:57:05 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 10:57:05 - INFO - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 688 ms
+2026-02-11 10:57:05 - INFO - com.companyname.employeeappraisal.SimpleCORSFilter - SimpleCORSFilter init
+2026-02-11 10:57:05 - DEBUG - com.companyname.employeeappraisal.util.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-02-11 10:57:05 - INFO - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 10:57:05 - INFO - org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 10:57:05 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 10:57:05 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2026-02-11 10:57:05 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6082ae2b
+2026-02-11 10:57:05 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2026-02-11 10:57:05 - WARN - org.hibernate.dialect.Dialect - HHH000511: The 5.5.43 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-11 10:57:05 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 10:57:05 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 5.5.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 10:57:05 - INFO - org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 10:57:05 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:57:06 - WARN - org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 10:57:06 - INFO - org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-11 10:57:06 - INFO - org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-11 10:57:06 - INFO - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-11 10:57:06 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 2025 (http) with context path '/'
+2026-02-11 10:57:06 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Started EmployeeAppraisalSystemApplication in 1.417 seconds (process running for 466.474)
+2026-02-11 10:57:06 - INFO - org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-02-11 10:57:15 - INFO - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 4 class path changes (0 additions, 1 deletion, 3 modifications)
+2026-02-11 10:57:15 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-11 10:57:15 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-11 10:57:15 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:57:15 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2026-02-11 10:57:15 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2026-02-11 10:57:15 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Starting EmployeeAppraisalSystemApplication using Java 21.0.5 with PID 35400 (C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem\target\classes started by sirisha.thumuluri in C:\Users\Sirisha.Thumuluri\git\Appraisal\EmployeeAppraisalSystem)
+2026-02-11 10:57:15 - DEBUG - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-11 10:57:15 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 10:57:15 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 10:57:15 - INFO - org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 163 ms. Found 25 JPA repository interfaces.
+2026-02-11 10:57:16 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 2025 (http)
+2026-02-11 10:57:16 - INFO - org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 10:57:16 - INFO - org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-11 10:57:16 - INFO - org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 10:57:16 - INFO - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 862 ms
+2026-02-11 10:57:16 - INFO - com.companyname.employeeappraisal.SimpleCORSFilter - SimpleCORSFilter init
+2026-02-11 10:57:16 - DEBUG - com.companyname.employeeappraisal.util.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-02-11 10:57:16 - INFO - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 10:57:16 - INFO - org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 10:57:16 - INFO - org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 10:57:16 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2026-02-11 10:57:16 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f60fa0f
+2026-02-11 10:57:16 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2026-02-11 10:57:16 - WARN - org.hibernate.dialect.Dialect - HHH000511: The 5.5.43 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-02-11 10:57:16 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 10:57:16 - INFO - org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 5.5.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 10:57:16 - INFO - org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 10:57:16 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 10:57:16 - WARN - org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 10:57:16 - INFO - org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2026-02-11 10:57:16 - INFO - org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-11 10:57:16 - INFO - org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-11 10:57:16 - INFO - org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 2025 (http) with context path '/'
+2026-02-11 10:57:16 - INFO - com.companyname.employeeappraisal.EmployeeAppraisalSystemApplication - Started EmployeeAppraisalSystemApplication in 1.668 seconds (process running for 476.881)
+2026-02-11 10:57:16 - INFO - org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-02-11 10:58:09 - WARN - com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=53s243ms709µs500ns).
+2026-02-11 11:15:39 - WARN - com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=12m59s701ms275µs400ns).
+2026-02-11 11:21:30 - INFO - org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (1 addition, 1 deletion, 0 modifications)
+2026-02-11 11:21:30 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-11 11:21:30 - INFO - org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-11 11:21:30 - INFO - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 11:21:30 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2026-02-11 11:21:30 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
